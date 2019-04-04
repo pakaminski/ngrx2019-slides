@@ -1,0 +1,11 @@
+-var transition= "slide"
+-var bgColor = "rgb(169, 33, 142)"
+block vars
+
+
+- var pageId = title+ "-"+  counter++ 
+section(id= pageId, data-transition=transition data-background-color=bgColor)
+  h2.white
+    block title
+  body.white
+    block content  

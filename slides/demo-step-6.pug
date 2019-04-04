@@ -1,0 +1,18 @@
+extends layout.pug 
+
+block vars
+  - var title = 'demo-step-6'
+
+block title
+        | Step 6
+block content
+      ul
+        li Implement adding a new task:
+        ul
+            li Create#{' '}
+               span.emp AddTask
+               |#{' '}action
+            li Handle the action in the reducer
+            li Dispatch the action in#{' '}
+               span.emp TaskBoardComponent
+               |#{' '}in appropriate handler

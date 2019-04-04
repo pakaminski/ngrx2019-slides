@@ -1,0 +1,27 @@
+extends layout.pug 
+
+block vars
+  - var title = 'demo-step-5'
+ 
+block title
+        | Step 5
+block content
+      ul
+        li Add #{' '}
+           span.emp TasksService.fetchTasks
+           |#{' '}method that will return task with some delay, to emulate the HTTP request behaviour (use#{' '}
+           span.emp timer
+           |#{' '} from rxjs)
+        li Be sure that#{' '}
+           span.emp TasksService
+           |#{' '} returns other tasks than in the default state
+        li Add#{' '}
+           span.emp LoadTask
+           |#{' '}and#{' '}
+           span.emp TasksLoaded
+           |#{' '}actions, handle them in the reducer (add#{' '}
+           span.emp loading: boolean
+           |#{' '}state)
+
+
+

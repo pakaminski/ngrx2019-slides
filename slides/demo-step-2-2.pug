@@ -1,0 +1,17 @@
+extends layout.pug 
+
+block vars
+  - var title = 'demo-step-2'
+
+block title
+        | Step 2
+block content
+      ul
+         li ...
+         li
+            | Map the tasks collection to a filtered one, based on#{' '}
+            span.emp this.mode (if set)#{' '}
+         li Write a unit test for your reducer
+
+      p.emp Since we're not relying on internal component state anymore, adding tasks won't work for a while.
+

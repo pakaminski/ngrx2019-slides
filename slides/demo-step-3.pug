@@ -1,0 +1,26 @@
+extends layout.pug 
+
+block vars
+  - var title = 'demo-step-3'
+   
+
+block title
+        | Step 3
+block content
+      ul
+        li Refactor
+          span.emp TaskBoardComponent#{' '}
+          | to use#{' '}
+          span.emp async
+          | #{' '}instead of subscribing to#{' '}
+          span.emp tasks$
+
+
+        li Extract tasks selection logic to#{' '}
+          span.emp store/selectors.ts
+          |#{' '}use#{' '}
+          span.emp createFeatureSelector
+          br
+          |#{' '}and#{' '}
+          span.emp createSelector
+          |#{' '}functions,

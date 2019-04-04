@@ -1,0 +1,22 @@
+extends layout.pug 
+
+block vars
+  - var title = 'demo-step-5'
+ 
+block title
+        | Step 5
+block content
+      ul
+        li Write an effect that reloads tasks on#{' '}
+           span.emp LoadTask
+           |#{' '}action and emits#{' '}
+           span.emp TasksLoaded
+           |#{' '} action
+        li Register the effect with#{' '}
+           span.emp EffectsModule.forRoot
+        li Add a temporarily fetch button to#{' '}
+           span.emp TaskBoardComponent
+           |#{' '}that will dispatch#{' '}
+           span.emp LoadTask
+           |#{' '}action
+

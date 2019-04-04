@@ -1,0 +1,29 @@
+extends layout.pug 
+
+block vars
+  - var title = 'demo-step-8'
+
+block title
+        | Step 8
+block content
+      ul
+        li Extend #{' '}
+           span.emp NgrxModuleState
+           |#{' '}to have router key of type#{' '}
+           span.emp RouterReducerState<RouterStateUrl>
+           |#{' '} - the#{' '}
+           span.emp RouterStateUrl
+           |#{' '}was implemented for you in#{' '}
+           span.emp store/router-store.ts
+
+        li Import and register #{' '}
+            span.emp routerReducer
+            |#{' '} in your present#{' '}
+            span.emp ActionReducerMap
+            |#{' '}(suggested key: `router`)
+        li Wire up#{' '}
+            span.emp StoreRouterConnectingModule.forRoot({ stateKey: 'router' })
+            |#{' '}with your module
+
+
+

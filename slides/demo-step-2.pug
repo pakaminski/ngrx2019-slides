@@ -1,0 +1,22 @@
+extends layout.pug 
+
+block vars
+  - var title = 'demo-step-2'
+
+block title
+        | Step 2
+block content
+        p Use the store to render tasks in :
+          span.emp  TaskBoardComponent
+           ul
+              li Stop using the service in#{' '}
+                 span.emp getData
+              li Fetch all tasks from the store using#{' '}
+                 span.emp select
+                 |#{' '}operator,
+              li
+                 span.emp Temporarily
+                 |#{' '}subscribe to the store and assign them to the existing#{' '}
+                 span.emp tasks#
+                 | {' '}field
+              li ...

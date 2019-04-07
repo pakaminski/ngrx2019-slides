@@ -22,7 +22,7 @@ block content
             span.emp ActionReducerMap
             |#{' '}(suggested key: `router`)
         li Wire up#{' '}
-            span.emp StoreRouterConnectingModule.forRoot({ stateKey: 'router' })
+            span.emp StoreRouterConnectingModule.forRoot({ serializer: CustomSerializer }),
             |#{' '}with your module
 
 
